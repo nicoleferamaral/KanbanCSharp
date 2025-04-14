@@ -33,3 +33,8 @@ Um sistema de gerenciamento de tarefas estilo **Kanban**, desenvolvido com **C# 
 1. Clone o repositório:
    ```bash
    git clone https://github.com/nicoleferamaral/KanbanCSharp.git
+
+## 📽️ Apresentação
+
+Acesse a apresentação completa do projeto no Canva:  
+👉 [Clique aqui para ver a apresentação](https://www.canva.com/design/DAGkR8xeYTE/axs1cO47pG4Q5PqzXW-NZw/view?utm_content=DAGkR8xeYTE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h7bf746b0ae)
