@@ -51,6 +51,7 @@ namespace GerenciadorDeTarefas
             ConfigurarBotao(Criar);
             ArredondarBotao(relatorio, 45);
             ConfigurarBotao(relatorio);
+            ConfigurarBotao(legenda);
             DeixarBotaoRedondo(legenda);
             ConfigurarBotao(Filtro);
             ConfigurarBotaoSair(Sair);
@@ -279,7 +280,7 @@ namespace GerenciadorDeTarefas
 
             Panel descricaoPanel = new Panel
             {
-                Height = 90,
+                Height = 100,
                 Dock = DockStyle.Top,
                 AutoScroll = true,
                 Margin = new Padding(10),
@@ -372,7 +373,7 @@ namespace GerenciadorDeTarefas
                 Text = "➡️",
                 Font = new Font("Segoe UI Emoji", 12),
                 Dock = DockStyle.Right,
-                Width = 40,
+                Width = 45,
                 FlatStyle = FlatStyle.Flat,
                 BackColor = Color.Transparent
             };
@@ -408,7 +409,7 @@ namespace GerenciadorDeTarefas
                 Text = "⬅️",
                 Font = new Font("Segoe UI Emoji", 12),
                 Dock = DockStyle.Left,
-                Width = 40,
+                Width = 45,
                 FlatStyle = FlatStyle.Flat,
                 BackColor = Color.Transparent
             };
@@ -445,7 +446,7 @@ namespace GerenciadorDeTarefas
                 Text = "🗑️",
                 Font = new Font("Segoe UI Emoji", 12),
                 Dock = DockStyle.Right,
-                Width = 50,
+                Width = 45,
                 FlatStyle = FlatStyle.Flat,
                 BackColor = Color.Transparent
             };
@@ -468,17 +469,25 @@ namespace GerenciadorDeTarefas
 
             Button AtualizarBtn = new Button
             {
-                Text = "️✏",
-                Font = new Font("Segoe UI Emoji", 12),
+               
                 Dock = DockStyle.Left,
-                Width = 50,
-                FlatStyle = FlatStyle.Flat,
-                BackColor = Color.Transparent,
+                Width = 45,
+                Text = "✏️",
+                Font = new Font("Segoe UI", 12),  // Fonte que suporta emoji
+          
+           
+            
+                FlatStyle = FlatStyle.Flat,       // Remove bordas padrão
+                FlatAppearance = { BorderSize = 0 }  // Sem bordas
+              
             };
-
+          
             AtualizarBtn.FlatAppearance.BorderSize = 0;
             AtualizarBtn.FlatAppearance.MouseOverBackColor = Color.LightSkyBlue;
             AtualizarBtn.FlatAppearance.MouseDownBackColor = Color.DeepSkyBlue;
+          
+
+
 
             AtualizarBtn.Click += (s, e) =>
             {
@@ -491,6 +500,8 @@ namespace GerenciadorDeTarefas
             DeixarBotaoRedondo(moverEsquerdaBtn);
             DeixarBotaoRedondo(moverDireitaBtn);
             DeixarBotaoRedondo(deletarBtn);
+
+           
 
             card.Controls.Add(AtualizarBtn);
             card.Controls.Add(moverEsquerdaBtn);
@@ -574,5 +585,6 @@ namespace GerenciadorDeTarefas
            
             legendas.ShowDialog();
         }
+       
     }
 }
