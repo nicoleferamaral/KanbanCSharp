@@ -6,7 +6,7 @@ Um sistema de gerenciamento de tarefas estilo **Kanban**, desenvolvido com **C# 
 
 - ✅ **CRUD completo** (Criar, Listar, Atualizar, Deletar tarefas)
 - 🎨 **Cards coloridos por prioridade** (Alta, Média, Baixa)
-- 📊 **Colunas por status** (A Fazer, Em Andamento, Concluído)
+- 📊 **Colunas por status** (Fazer, Fazendo, Finalizado)
 - 🔍 **Filtro de tarefas** por:
   - Status
   - Prioridade
