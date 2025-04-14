@@ -19,7 +19,7 @@ Um sistema de gerenciamento de tarefas estilo **Kanban**, desenvolvido com **C# 
 
 ## 🖼️ Captura de Tela
 
-![Screenshot do Sistema]("1744657469500080.JPG") 
+<img src="kanban.jpg" alt="Texto Alternativo">
 
 ## ⚙️ Tecnologias Utilizadas
 
